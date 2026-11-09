@@ -248,7 +248,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/agent-team-plus"
           },
           "engines": {
@@ -292,7 +292,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/browser-control"
           },
           "engines": {
@@ -336,7 +336,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/game-lab"
           },
           "engines": {
@@ -379,7 +379,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/harness-chrome"
           },
           "engines": {
@@ -422,7 +422,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/harness-deck"
           },
           "engines": {
@@ -465,7 +465,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/harness-rail"
           },
           "engines": {
@@ -507,7 +507,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/inhouse-browser"
           },
           "engines": {
@@ -550,7 +550,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/mobile-host"
           },
           "engines": {
@@ -594,7 +594,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/run-hidden"
           },
           "engines": {
@@ -637,7 +637,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/session-resume"
           },
           "engines": {
@@ -680,7 +680,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
-            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "commit": "a802f73300add00515b2edb00bafeb38c018f385",
             "path": "plugins/system-monitor"
           },
           "engines": {
