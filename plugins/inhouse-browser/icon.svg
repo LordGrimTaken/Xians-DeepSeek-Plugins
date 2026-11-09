@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="In-house Browser">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="In-House Browser">
   <defs>
-    <linearGradient id="ib-bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3b8bff"/>
-      <stop offset="1" stop-color="#1447c4"/>
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
     </linearGradient>
   </defs>
-  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#ib-bg)"/>
-  <rect x="2" y="2" width="60" height="60" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
-  <g fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round">
-    <circle cx="32" cy="33" r="16.5"/>
-    <ellipse cx="32" cy="33" rx="7.4" ry="16.5"/>
-    <path d="M15.5 33h33"/>
-    <path d="M18.6 24.5h26.8"/>
-    <path d="M18.6 41.5h26.8"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="13" width="39" height="38" rx="5"/>
+    <circle cx="32" cy="36.5" r="10"/>
+    <ellipse cx="32" cy="36.5" rx="4.6" ry="10"/>
   </g>
-  <circle cx="46.5" cy="18.5" r="4.6" fill="#ffd166" stroke="#1447c4" stroke-width="1.6"/>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 22h39"/>
+    <path d="M22 36.5h20"/>
+  </g>
 </svg>

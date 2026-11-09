@@ -1,14 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Agent Team Plus">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#4ee59b"/>
-      <stop offset="1" stop-color="#8ab4ff"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
     </linearGradient>
   </defs>
-  <rect x="3" y="3" width="58" height="58" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.5"/>
-  <circle cx="22" cy="24" r="6" fill="none" stroke="url(#g)" stroke-width="3"/>
-  <path d="M12 44c0-6 4.5-10 10-10s10 4 10 10" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="44" cy="27" r="4.5" fill="none" stroke="#8ab4ff" stroke-width="2.5"/>
-  <path d="M37 42c0-4.2 3.2-7 7-7s7 2.8 7 7" fill="none" stroke="#8ab4ff" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M32 10v6M10 32h6M48 52v-4" stroke="#4ee59b" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 47a6 6 0 0 1 12 0a6 6 0 0 1 12 0a6 6 0 0 1 12 0"/>
+    <circle cx="19.5" cy="36" r="3"/>
+    <circle cx="31.5" cy="36" r="3"/>
+    <circle cx="43.5" cy="36" r="3"/>
+    <path d="M42.5 20h8M46.5 16v8"/>
+  </g>
 </svg>

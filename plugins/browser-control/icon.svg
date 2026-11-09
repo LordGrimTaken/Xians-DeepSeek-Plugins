@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Browser control">
-  <rect x="6" y="10" width="52" height="40" rx="7" fill="none" stroke="#6ea8ff" stroke-width="3.5"/>
-  <path d="M6 20h52" stroke="#6ea8ff" stroke-width="3.5"/>
-  <circle cx="12" cy="15" r="1.8" fill="#3ddc97"/>
-  <circle cx="18" cy="15" r="1.8" fill="#e5c07b"/>
-  <circle cx="24" cy="15" r="1.8" fill="#e06c75"/>
-  <rect x="13" y="27" width="16" height="3" rx="1.5" fill="#9fb0c0"/>
-  <rect x="13" y="34" width="26" height="3" rx="1.5" fill="#9fb0c0"/>
-  <rect x="13" y="41" width="20" height="3" rx="1.5" fill="#9fb0c0"/>
-  <path d="m42 28 9 6-9 6z" fill="#3ddc97"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Browser Control">
+  <defs>
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 26 35 47.6 38.2 38.2 47.6 35Z"/>
+    <path d="M20 20l3 3"/>
+    <path d="M17 31.5h3.6"/>
+    <path d="M31.5 17v3.6"/>
+  </g>
 </svg>

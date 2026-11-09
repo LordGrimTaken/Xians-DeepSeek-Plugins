@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Plugin icon placeholder">
-  <!-- Placeholder icon: the curated green icon set replaces this file. -->
-  <rect x="2" y="2" width="60" height="60" rx="14" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-  <rect x="22" y="22" width="20" height="20" rx="5" fill="none" stroke="#3fb950" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Harness Rail">
+  <defs>
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="13" y="12.5" width="11" height="29" rx="5.5"/>
+    <path d="M31.5 21.5H51"/>
+    <path d="M31.5 29.5H44.5"/>
+    <rect x="13" y="46" width="38" height="6" rx="3"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="18.5" cy="20.5" r="1.7"/>
+    <circle cx="18.5" cy="27" r="1.7"/>
+    <circle cx="18.5" cy="33.5" r="1.7"/>
+  </g>
 </svg>

@@ -1,8 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect x="3" y="3" width="58" height="58" rx="13" fill="#1f2630"/>
-  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="#e3c55a" stroke-opacity="0.45" stroke-width="2"/>
-  <rect x="14.5" y="18.5" width="35" height="27" rx="4" fill="none" stroke="#e3c55a" stroke-width="2.4"/>
-  <path d="M14.5 25.5h35" stroke="#e3c55a" stroke-width="2.4"/>
-  <circle cx="19.6" cy="22" r="1.55" fill="#c8372d"/>
-  <path d="M11.5 47.5 L52.5 16.5" stroke="#c8372d" stroke-width="3.6" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Run Hidden">
+  <defs>
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="14" width="39" height="36" rx="5"/>
+    <path d="M22.5 34.5q9.5-7.5 19 0-9.5 7.5-19 0z"/>
+  </g>
+  <circle cx="32" cy="34.5" r="3.3" fill="#a8ffd9"/>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 23.5h39"/>
+  </g>
+  <path d="M20 46 44.5 24.5" stroke="#0a1f17" stroke-width="8" stroke-linecap="round"/>
+  <path d="M20 46 44.5 24.5" stroke="#a8ffd9" stroke-width="3.4" stroke-linecap="round"/>
 </svg>
