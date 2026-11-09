@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Session Resume">
+  <defs>
+    <linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48.5 27.4A16.5 16.5 0 1 1 28.7 17.1"/>
+    <path d="M21.9 13.9 28.7 17.1 24.4 23.2"/>
+  </g>
+  <path d="M28.5 25.5v15L40 33z" fill="#a8ffd9"/>
+</svg>

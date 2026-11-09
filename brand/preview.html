@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xian's DeepSeek Plugins — icon preview</title>
+<style>
+  :root{
+    --ink-deep:#050c09; --ink:#0a1f17; --mint:#4ee59b; --mint-bright:#a8ffd9; --kelp:#2a7a58;
+    --mono:ui-monospace, Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--ink-deep); color:var(--mint-bright); font-family:var(--mono);
+    min-height:100vh; padding:40px 32px 64px;
+    background-image:
+      radial-gradient(700px 320px at 12% -8%, rgba(78,229,155,.10), transparent 70%),
+      radial-gradient(600px 300px at 92% 4%, rgba(168,255,217,.06), transparent 70%),
+      linear-gradient(rgba(78,229,155,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(78,229,155,.045) 1px, transparent 1px);
+    background-size:auto, auto, 32px 32px, 32px 32px;
+  }
+  header{max-width:1080px;margin:0 auto 34px}
+  h1{font-size:22px;font-weight:600;letter-spacing:.06em;margin:0 0 8px;color:var(--mint-bright)}
+  .sub{font-size:13px;line-height:1.6;color:var(--mint);opacity:.78;margin:0;max-width:72ch}
+  .caption{font-size:12px;line-height:1.6;color:var(--mint);opacity:.62;margin:14px 0 0}
+  .swatches{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+  .swatches li{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--mint);opacity:.85;
+    border:1px solid rgba(78,229,155,.22);border-radius:999px;padding:4px 11px 4px 5px}
+  .swatches i{width:12px;height:12px;border-radius:4px;display:block;border:1px solid rgba(168,255,217,.25)}
+  section{max-width:1080px;margin:0 auto 40px}
+  h2{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);
+    opacity:.62;margin:0 0 16px;display:flex;align-items:center;gap:12px}
+  h2::after{content:"";flex:1;height:1px;background:rgba(78,229,155,.16)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+  figure{margin:0}
+  .card{
+    background:linear-gradient(180deg, rgba(10,31,23,.85), rgba(10,31,23,.35));
+    border:1px solid rgba(78,229,155,.16); border-radius:14px; padding:18px 12px 14px;
+    display:flex;flex-direction:column;align-items:center;gap:14px;
+  }
+  .card figcaption{display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+  .card strong{font-size:12px;font-weight:600;color:var(--mint-bright);letter-spacing:.02em}
+  .card span{font-size:10px;color:var(--mint);opacity:.5}
+  .chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:20px 14px}
+  .chip{display:flex;flex-direction:column;align-items:center;gap:9px}
+  .chip figcaption{font-size:10px;line-height:1.35;color:var(--mint);opacity:.72;text-align:center;max-width:92px}
+  footer{max-width:1080px;margin:8px auto 0;border-top:1px solid rgba(78,229,155,.14);padding-top:16px;
+    font-size:11px;line-height:1.7;color:var(--mint);opacity:.5}
+  code{color:var(--mint-bright);opacity:.9}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Xian's DeepSeek Plugins — icon family</h1>
+    <p class="sub">15 plugin icons in one visual language: a deep ink rounded square with a bioluminescent
+      mint line glyph. Every icon is a hand-authored 64x64 SVG — no external references, no fonts, no raster.</p>
+    <p class="caption">Hadal Mint · container <code>#0a1f17</code> on a <code>#4ee59b @ 55%</code> stroke ·
+      glyph gradient <code>#4ee59b → #a8ffd9</code> · 3.4&nbsp;px round-cap strokes · opt. <code>#a8ffd9</code> accent fill</p>
+    <ul class="swatches">
+      <li><i style="background:#050c09"></i>ink-deep #050c09</li>
+      <li><i style="background:#0a1f17"></i>ink #0a1f17</li>
+      <li><i style="background:#4ee59b"></i>mint #4ee59b</li>
+      <li><i style="background:#a8ffd9"></i>mint-bright #a8ffd9</li>
+      <li><i style="background:#2a7a58"></i>kelp #2a7a58</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>at 88 px</h2>
+    <div class="grid">
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Context Lens"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g1)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 14 14 23l9 9"/>
+    <path d="M39 14l9 9-9 9"/>
+    <circle cx="34" cy="36" r="9.5"/>
+    <path d="M40.7 42.7 47 49"/>
+  </g></svg>
+        <figcaption><strong>Context Lens</strong><span>context-lens</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Notify"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g2)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 34v-5a7 7 0 0 1 14 0v5"/>
+    <path d="M20 34.5h20"/>
+    <path d="M44 26a6 6 0 0 1 0 10"/>
+    <path d="M47.5 21.5a8 8 0 0 1 0 14"/>
+  </g>
+  <circle cx="30" cy="38.5" r="2.2" fill="#a8ffd9"/></svg>
+        <figcaption><strong>Notify</strong><span>notify</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Git Worktree"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g3)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 21v22"/>
+    <path d="M18 33c0 8 6 12 14 12"/>
+    <rect x="38" y="13" width="12" height="12" rx="3"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="18" cy="18" r="3"/>
+    <circle cx="18" cy="46" r="3"/>
+    <circle cx="34" cy="45" r="3"/>
+  </g></svg>
+        <figcaption><strong>Git Worktree</strong><span>git-worktree</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Repo Map"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g4)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 20 25 14l14 6 12-6v30l-12 6-14-6-12 6z"/>
+    <path d="M25 14v30"/>
+    <path d="M39 20v30"/>
+  </g>
+  <circle cx="32" cy="30" r="2.6" fill="#a8ffd9"/></svg>
+        <figcaption><strong>Repo Map</strong><span>repo-map</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Agent Team Plus"><defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g5)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 47a6 6 0 0 1 12 0a6 6 0 0 1 12 0a6 6 0 0 1 12 0"/>
+    <circle cx="19.5" cy="36" r="3"/>
+    <circle cx="31.5" cy="36" r="3"/>
+    <circle cx="43.5" cy="36" r="3"/>
+    <path d="M42.5 20h8M46.5 16v8"/>
+  </g></svg>
+        <figcaption><strong>Agent Team Plus</strong><span>agent-team-plus</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Browser Control"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g6)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 26 35 47.6 38.2 38.2 47.6 35Z"/>
+    <path d="M20 20l3 3"/>
+    <path d="M17 31.5h3.6"/>
+    <path d="M31.5 17v3.6"/>
+  </g></svg>
+        <figcaption><strong>Browser Control</strong><span>browser-control</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Game Lab"><defs><linearGradient id="g7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g7)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 21h18a10 10 0 0 1 10 10v3a9 9 0 0 1-9 9c-3 0-5-1-7-3h-6c-2 2-4 3-7 3a9 9 0 0 1-9-9v-3a10 10 0 0 1 10-10z"/>
+    <path d="M19 32h8M23 28v8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="39.5" cy="29.5" r="2.4"/>
+    <circle cx="45" cy="35" r="2.4"/>
+  </g></svg>
+        <figcaption><strong>Game Lab</strong><span>game-lab</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Harness Chrome"><defs><linearGradient id="g8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g8)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="13" y="14" width="38" height="36" rx="5"/>
+    <path d="M18.5 24v-3a2.5 2.5 0 0 1 2.5-2.5h5.5v5.5"/>
+    <path d="M31 24v-3a2.5 2.5 0 0 1 2.5-2.5h5v5.5"/>
+    <path d="M20 32.5 26 37l-6 4.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 24h38"/>
+    <path d="M30 41.5h9.5"/>
+  </g></svg>
+        <figcaption><strong>Harness Chrome</strong><span>harness-chrome</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Harness Deck"><defs><linearGradient id="g9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g9)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16.5" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="27.75" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="39" width="30" height="8.5" rx="2.5"/>
+    <rect x="42.5" y="13.5" width="9" height="37" rx="4"/>
+  </g></svg>
+        <figcaption><strong>Harness Deck</strong><span>harness-deck</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Harness Rail"><defs><linearGradient id="g10" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g10)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="34.5" y="13" width="16" height="38" rx="8"/>
+    <rect x="38" y="44.5" width="9" height="4" rx="1.8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="42.5" cy="20" r="1.9"/>
+    <circle cx="42.5" cy="26.5" r="1.9"/>
+    <circle cx="42.5" cy="33" r="1.9"/>
+    <circle cx="42.5" cy="39.5" r="1.9"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16" width="15" height="32" rx="3"/>
+  </g></svg>
+        <figcaption><strong>Harness Rail</strong><span>harness-rail</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="In-House Browser"><defs><linearGradient id="g11" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g11)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="13" width="39" height="38" rx="5"/>
+    <circle cx="32" cy="36.5" r="10"/>
+    <ellipse cx="32" cy="36.5" rx="4.6" ry="10"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 22h39"/>
+    <path d="M22 36.5h20"/>
+  </g></svg>
+        <figcaption><strong>In-House Browser</strong><span>inhouse-browser</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Mobile Host"><defs><linearGradient id="g12" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g12)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="15" y="14" width="16" height="36" rx="4.5"/>
+    <path d="M34 19a7 7 0 0 1 7 7"/>
+    <path d="M34 12.5a13.5 13.5 0 0 1 13.5 13.5"/>
+  </g>
+  <circle cx="34" cy="26" r="2" fill="#a8ffd9"/>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 18.5h5M20.5 46h5"/>
+  </g></svg>
+        <figcaption><strong>Mobile Host</strong><span>mobile-host</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Run Hidden"><defs><linearGradient id="g13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g13)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="14" width="39" height="36" rx="5"/>
+    <path d="M21.5 33q10.5 8 21 0"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 23.5h39"/>
+    <path d="M26 36.2l-1.8 3.2M32 37.4v3.4M38.5 35.9l1.8 3.2"/>
+  </g></svg>
+        <figcaption><strong>Run Hidden</strong><span>run-hidden</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="Session Resume"><defs><linearGradient id="g14" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g14)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48.5 27.4A16.5 16.5 0 1 1 28.7 17.1"/>
+    <path d="M21.9 13.9 28.7 17.1 24.4 23.2"/>
+  </g>
+  <path d="M28.5 25.5v15L40 33z" fill="#a8ffd9"/></svg>
+        <figcaption><strong>Session Resume</strong><span>session-resume</span></figcaption>
+      </figure>
+      <figure class="card">
+        <svg viewBox="0 0 64 64" width="88" height="88" role="img" aria-label="System Monitor"><defs><linearGradient id="g15" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g15)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 38a17 17 0 0 1 34 0"/>
+    <path d="M32 38 40 28.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 46h11M28 46h8M40 46h10"/>
+  </g>
+  <circle cx="32" cy="38" r="3.2" fill="#a8ffd9"/></svg>
+        <figcaption><strong>System Monitor</strong><span>system-monitor</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>at 40 px</h2>
+    <div class="chips">
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Context Lens"><defs><linearGradient id="g16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g16)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 14 14 23l9 9"/>
+    <path d="M39 14l9 9-9 9"/>
+    <circle cx="34" cy="36" r="9.5"/>
+    <path d="M40.7 42.7 47 49"/>
+  </g></svg>
+        <figcaption>Context Lens</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Notify"><defs><linearGradient id="g17" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g17)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 34v-5a7 7 0 0 1 14 0v5"/>
+    <path d="M20 34.5h20"/>
+    <path d="M44 26a6 6 0 0 1 0 10"/>
+    <path d="M47.5 21.5a8 8 0 0 1 0 14"/>
+  </g>
+  <circle cx="30" cy="38.5" r="2.2" fill="#a8ffd9"/></svg>
+        <figcaption>Notify</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Git Worktree"><defs><linearGradient id="g18" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g18)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 21v22"/>
+    <path d="M18 33c0 8 6 12 14 12"/>
+    <rect x="38" y="13" width="12" height="12" rx="3"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="18" cy="18" r="3"/>
+    <circle cx="18" cy="46" r="3"/>
+    <circle cx="34" cy="45" r="3"/>
+  </g></svg>
+        <figcaption>Git Worktree</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Repo Map"><defs><linearGradient id="g19" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g19)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 20 25 14l14 6 12-6v30l-12 6-14-6-12 6z"/>
+    <path d="M25 14v30"/>
+    <path d="M39 20v30"/>
+  </g>
+  <circle cx="32" cy="30" r="2.6" fill="#a8ffd9"/></svg>
+        <figcaption>Repo Map</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Agent Team Plus"><defs><linearGradient id="g20" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g20)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 47a6 6 0 0 1 12 0a6 6 0 0 1 12 0a6 6 0 0 1 12 0"/>
+    <circle cx="19.5" cy="36" r="3"/>
+    <circle cx="31.5" cy="36" r="3"/>
+    <circle cx="43.5" cy="36" r="3"/>
+    <path d="M42.5 20h8M46.5 16v8"/>
+  </g></svg>
+        <figcaption>Agent Team Plus</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Browser Control"><defs><linearGradient id="g21" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g21)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 26 35 47.6 38.2 38.2 47.6 35Z"/>
+    <path d="M20 20l3 3"/>
+    <path d="M17 31.5h3.6"/>
+    <path d="M31.5 17v3.6"/>
+  </g></svg>
+        <figcaption>Browser Control</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Game Lab"><defs><linearGradient id="g22" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g22)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 21h18a10 10 0 0 1 10 10v3a9 9 0 0 1-9 9c-3 0-5-1-7-3h-6c-2 2-4 3-7 3a9 9 0 0 1-9-9v-3a10 10 0 0 1 10-10z"/>
+    <path d="M19 32h8M23 28v8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="39.5" cy="29.5" r="2.4"/>
+    <circle cx="45" cy="35" r="2.4"/>
+  </g></svg>
+        <figcaption>Game Lab</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Harness Chrome"><defs><linearGradient id="g23" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g23)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="13" y="14" width="38" height="36" rx="5"/>
+    <path d="M18.5 24v-3a2.5 2.5 0 0 1 2.5-2.5h5.5v5.5"/>
+    <path d="M31 24v-3a2.5 2.5 0 0 1 2.5-2.5h5v5.5"/>
+    <path d="M20 32.5 26 37l-6 4.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 24h38"/>
+    <path d="M30 41.5h9.5"/>
+  </g></svg>
+        <figcaption>Harness Chrome</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Harness Deck"><defs><linearGradient id="g24" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g24)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16.5" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="27.75" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="39" width="30" height="8.5" rx="2.5"/>
+    <rect x="42.5" y="13.5" width="9" height="37" rx="4"/>
+  </g></svg>
+        <figcaption>Harness Deck</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Harness Rail"><defs><linearGradient id="g25" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g25)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="34.5" y="13" width="16" height="38" rx="8"/>
+    <rect x="38" y="44.5" width="9" height="4" rx="1.8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="42.5" cy="20" r="1.9"/>
+    <circle cx="42.5" cy="26.5" r="1.9"/>
+    <circle cx="42.5" cy="33" r="1.9"/>
+    <circle cx="42.5" cy="39.5" r="1.9"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16" width="15" height="32" rx="3"/>
+  </g></svg>
+        <figcaption>Harness Rail</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="In-House Browser"><defs><linearGradient id="g26" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g26)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="13" width="39" height="38" rx="5"/>
+    <circle cx="32" cy="36.5" r="10"/>
+    <ellipse cx="32" cy="36.5" rx="4.6" ry="10"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 22h39"/>
+    <path d="M22 36.5h20"/>
+  </g></svg>
+        <figcaption>In-House Browser</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Mobile Host"><defs><linearGradient id="g27" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g27)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="15" y="14" width="16" height="36" rx="4.5"/>
+    <path d="M34 19a7 7 0 0 1 7 7"/>
+    <path d="M34 12.5a13.5 13.5 0 0 1 13.5 13.5"/>
+  </g>
+  <circle cx="34" cy="26" r="2" fill="#a8ffd9"/>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 18.5h5M20.5 46h5"/>
+  </g></svg>
+        <figcaption>Mobile Host</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Run Hidden"><defs><linearGradient id="g28" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g28)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="14" width="39" height="36" rx="5"/>
+    <path d="M21.5 33q10.5 8 21 0"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 23.5h39"/>
+    <path d="M26 36.2l-1.8 3.2M32 37.4v3.4M38.5 35.9l1.8 3.2"/>
+  </g></svg>
+        <figcaption>Run Hidden</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="Session Resume"><defs><linearGradient id="g29" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g29)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48.5 27.4A16.5 16.5 0 1 1 28.7 17.1"/>
+    <path d="M21.9 13.9 28.7 17.1 24.4 23.2"/>
+  </g>
+  <path d="M28.5 25.5v15L40 33z" fill="#a8ffd9"/></svg>
+        <figcaption>Session Resume</figcaption>
+      </figure>
+      <figure class="chip">
+        <svg viewBox="0 0 64 64" width="40" height="40" role="img" aria-label="System Monitor"><defs><linearGradient id="g30" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#g30)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 38a17 17 0 0 1 34 0"/>
+    <path d="M32 38 40 28.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 46h11M28 46h8M40 46h10"/>
+  </g>
+  <circle cx="32" cy="38" r="3.2" fill="#a8ffd9"/></svg>
+        <figcaption>System Monitor</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    Each icon ships as <code>icons/&lt;slug&gt;.svg</code>, 64x64, under 4&nbsp;KB, and is embedded by DeepSeek
+    Harness as a base64 data URI (well under the 256&nbsp;KiB limit). The preview is fully self-contained: inline
+    CSS and inline SVG only — no scripts, no external assets, no web fonts.
+  </footer>
+</body>
+</html>

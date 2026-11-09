@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Repo Map">
+  <defs>
+    <linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ee59b"/>
+      <stop offset="1" stop-color="#a8ffd9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 20 25 14l14 6 12-6v30l-12 6-14-6-12 6z"/>
+    <path d="M25 14v30"/>
+    <path d="M39 20v30"/>
+  </g>
+  <circle cx="32" cy="30" r="2.6" fill="#a8ffd9"/>
+</svg>
