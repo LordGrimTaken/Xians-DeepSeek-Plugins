@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1118 600" width="1118" height="600" role="img" aria-label="Xian's DeepSeek Plugins icon sheet">
+  <title>Xian's DeepSeek Plugins — icon sheet</title>
+  <defs>
+    <linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4ee59b"/><stop offset="1" stop-color="#a8ffd9"/></linearGradient>
+  </defs>
+  <rect width="1118" height="600" fill="#050c09"/>
+  <text x="48" y="54" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="24" fill="#a8ffd9">Xian's DeepSeek Plugins</text>
+  <text x="48" y="82" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b" opacity="0.62">icon sheet · 15 plugins · 64x64 · ink #0a1f17 · mint gradient #4ee59b -&gt; #a8ffd9</text>
+  <path d="M48 98h1022" stroke="#4ee59b" stroke-opacity="0.14" stroke-width="1"/>
+<g transform="translate(95 110) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 14 14 23l9 9"/>
+    <path d="M39 14l9 9-9 9"/>
+    <circle cx="34" cy="36" r="9.5"/>
+    <path d="M40.7 42.7 47 49"/>
+  </g></g>
+  <text x="143" y="228" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Context Lens</text>
+<g transform="translate(303 110) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 34v-5a7 7 0 0 1 14 0v5"/>
+    <path d="M20 34.5h20"/>
+    <path d="M44 26a6 6 0 0 1 0 10"/>
+    <path d="M47.5 21.5a8 8 0 0 1 0 14"/>
+  </g>
+  <circle cx="30" cy="38.5" r="2.2" fill="#a8ffd9"/></g>
+  <text x="351" y="228" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Notify</text>
+<g transform="translate(511 110) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 21v22"/>
+    <path d="M18 33c0 8 6 12 14 12"/>
+    <rect x="38" y="13" width="12" height="12" rx="3"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="18" cy="18" r="3"/>
+    <circle cx="18" cy="46" r="3"/>
+    <circle cx="34" cy="45" r="3"/>
+  </g></g>
+  <text x="559" y="228" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Git Worktree</text>
+<g transform="translate(719 110) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 20 25 14l14 6 12-6v30l-12 6-14-6-12 6z"/>
+    <path d="M25 14v30"/>
+    <path d="M39 20v30"/>
+  </g>
+  <circle cx="32" cy="30" r="2.6" fill="#a8ffd9"/></g>
+  <text x="767" y="228" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Repo Map</text>
+<g transform="translate(927 110) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13.5 47a6 6 0 0 1 12 0a6 6 0 0 1 12 0a6 6 0 0 1 12 0"/>
+    <circle cx="19.5" cy="36" r="3"/>
+    <circle cx="31.5" cy="36" r="3"/>
+    <circle cx="43.5" cy="36" r="3"/>
+    <path d="M42.5 20h8M46.5 16v8"/>
+  </g></g>
+  <text x="975" y="228" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Agent Team Plus</text>
+<g transform="translate(95 262) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 26 35 47.6 38.2 38.2 47.6 35Z"/>
+    <path d="M20 20l3 3"/>
+    <path d="M17 31.5h3.6"/>
+    <path d="M31.5 17v3.6"/>
+  </g></g>
+  <text x="143" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Browser Control</text>
+<g transform="translate(303 262) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M23 21h18a10 10 0 0 1 10 10v3a9 9 0 0 1-9 9c-3 0-5-1-7-3h-6c-2 2-4 3-7 3a9 9 0 0 1-9-9v-3a10 10 0 0 1 10-10z"/>
+    <path d="M19 32h8M23 28v8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="39.5" cy="29.5" r="2.4"/>
+    <circle cx="45" cy="35" r="2.4"/>
+  </g></g>
+  <text x="351" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Game Lab</text>
+<g transform="translate(511 262) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="13" y="14" width="38" height="36" rx="5"/>
+    <path d="M18.5 24v-3a2.5 2.5 0 0 1 2.5-2.5h5.5v5.5"/>
+    <path d="M31 24v-3a2.5 2.5 0 0 1 2.5-2.5h5v5.5"/>
+    <path d="M20 32.5 26 37l-6 4.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 24h38"/>
+    <path d="M30 41.5h9.5"/>
+  </g></g>
+  <text x="559" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Harness Chrome</text>
+<g transform="translate(719 262) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16.5" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="27.75" width="30" height="8.5" rx="2.5"/>
+    <rect x="12.5" y="39" width="30" height="8.5" rx="2.5"/>
+    <rect x="42.5" y="13.5" width="9" height="37" rx="4"/>
+  </g></g>
+  <text x="767" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Harness Deck</text>
+<g transform="translate(927 262) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="34.5" y="13" width="16" height="38" rx="8"/>
+    <rect x="38" y="44.5" width="9" height="4" rx="1.8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="42.5" cy="20" r="1.9"/>
+    <circle cx="42.5" cy="26.5" r="1.9"/>
+    <circle cx="42.5" cy="33" r="1.9"/>
+    <circle cx="42.5" cy="39.5" r="1.9"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="16" width="15" height="32" rx="3"/>
+  </g></g>
+  <text x="975" y="380" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Harness Rail</text>
+<g transform="translate(95 414) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="13" width="39" height="38" rx="5"/>
+    <circle cx="32" cy="36.5" r="10"/>
+    <ellipse cx="32" cy="36.5" rx="4.6" ry="10"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 22h39"/>
+    <path d="M22 36.5h20"/>
+  </g></g>
+  <text x="143" y="532" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">In-House Browser</text>
+<g transform="translate(303 414) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="15" y="14" width="16" height="36" rx="4.5"/>
+    <path d="M34 19a7 7 0 0 1 7 7"/>
+    <path d="M34 12.5a13.5 13.5 0 0 1 13.5 13.5"/>
+  </g>
+  <circle cx="34" cy="26" r="2" fill="#a8ffd9"/>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20.5 18.5h5M20.5 46h5"/>
+  </g></g>
+  <text x="351" y="532" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Mobile Host</text>
+<g transform="translate(511 414) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12.5" y="14" width="39" height="36" rx="5"/>
+    <path d="M21.5 33q10.5 8 21 0"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12.5 23.5h39"/>
+    <path d="M26 36.2l-1.8 3.2M32 37.4v3.4M38.5 35.9l1.8 3.2"/>
+  </g></g>
+  <text x="559" y="532" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Run Hidden</text>
+<g transform="translate(719 414) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48.5 27.4A16.5 16.5 0 1 1 28.7 17.1"/>
+    <path d="M21.9 13.9 28.7 17.1 24.4 23.2"/>
+  </g>
+  <path d="M28.5 25.5v15L40 33z" fill="#a8ffd9"/></g>
+  <text x="767" y="532" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">Session Resume</text>
+<g transform="translate(927 414) scale(1.5)"><rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
+  <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 38a17 17 0 0 1 34 0"/>
+    <path d="M32 38 40 28.5"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 46h11M28 46h8M40 46h10"/>
+  </g>
+  <circle cx="32" cy="38" r="3.2" fill="#a8ffd9"/></g>
+  <text x="975" y="532" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="13" fill="#4ee59b">System Monitor</text>
+  <text x="48" y="578" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#4ee59b" opacity="0.4">icons/&lt;slug&gt;.svg · 64x64 viewBox · 3.4px optical stroke · each file under 4 KB</text>
+</svg>
