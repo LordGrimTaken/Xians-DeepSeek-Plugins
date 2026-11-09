@@ -1,18 +1,23 @@
 #!/bin/sh
 # Cosmetic green-icon overlay for the four published (npm) plugins.
 #
-# The vendored plugins in plugins/ ship the curated icon inside their package.
-# Plugins installed from the npm registry do not, so their cards fall back to
-# the default artwork in the Plugins/Discover lists. This helper copies
-# icons/<slug>.svg into the installed package directory under the profile's
-# node_modules and adds "icon": "./icon.svg" to its package.json when absent.
+# The vendored plugins in plugins/ ship the curated icon inside their package, so
+# they need nothing. Plugins installed from the npm registry do not carry
+# icons/<slug>.svg in their package, so their cards fall back to the default
+# artwork in the Plugins/Discover lists. This helper copies icons/<slug>.svg into
+# the installed package directory under the profile's node_modules and makes the
+# manifest able to advertise it:
+#   - adds "icon": "./icon.svg" when the package has no icon field, and
+#   - adds an "./icon" export when the package's `exports` map hides package.json
+#     (without one, the Harness cannot read the manifest and the icon is ignored).
 #
 # WARNING: this is cosmetic and reversible, not durable.
 #   - A package update or reinstall replaces the package directory, removing the
-#     image and the field; simply re-run this script afterwards.
+#     image and the edits; simply re-run this script afterwards.
 #   - pnpm may share the package directory with other profiles through its
 #     content store, so the overlay can appear in those profiles too.
-#   - `--restore` removes the files and field this script added.
+#   - `--restore` reverts exactly what it added, using a state file kept in the
+#     profile: <profile>/.xdp-icon-overlay/state.json and the replaced icons.
 #
 # Usage: scripts/apply-icon-overlay.sh [--profile <name>] [--restore] [-h]
 set -eu
@@ -25,9 +30,10 @@ usage() {
 Overlay the curated green icons onto already-installed npm plugins.
 
 The four published plugins (context-lens, notify, git-worktree, repo-map) are
-installed from the npm registry, so they do not carry icons/<slug>.svg inside
-the package. This script copies the curated icon into each installed package
-directory and points the package manifest at it.
+installed from the npm registry, so they do not carry icons/<slug>.svg inside the
+package. This script copies the curated icon into each installed package
+directory and points the package manifest at it (adding an "./icon" export when
+the manifest would otherwise be unreachable).
 
 WARNING: package updates and reinstalls revert this overlay. Re-run it after an
 update, or use --restore to remove it.
@@ -36,7 +42,7 @@ Usage: scripts/apply-icon-overlay.sh [options]
 
 Options:
   --profile <name>   DSH profile whose node_modules to touch (default: web)
-  --restore          remove the icons and "icon" fields this script added
+  --restore          remove the icons and manifest edits this script added
   -h, --help         show this help
 EOF
 }
@@ -82,22 +88,19 @@ case "$PROFILE" in
     ;;
 esac
 
-if ! command -v node >/dev/null 2>&1; then
-  printf 'error: node is required to edit package.json\n' >&2
-  exit 1
-fi
-
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
 ICONS_DIR=$ROOT/icons
 if [ ! -d "$ICONS_DIR" ]; then
-  printf 'error: %s is missing; this checkout has no curated icon set\n' "$ICONS_DIR" >&2
+  printf 'error: %s/icons is missing; run this from a full checkout.\n' "$ROOT" >&2
   exit 1
 fi
 
 DSH_HOME_DIR=${DSH_HOME:-$HOME/.dsh}
 PROFILE_DIR=$DSH_HOME_DIR/profiles/$PROFILE
 NODE_MODULES=$PROFILE_DIR/node_modules
+STATE_DIR=$PROFILE_DIR/.xdp-icon-overlay
+STATE_FILE=$STATE_DIR/state.json
 
 if [ ! -d "$NODE_MODULES" ]; then
   printf 'error: %s does not exist.\n' "$NODE_MODULES" >&2
@@ -116,52 +119,86 @@ git-worktree|@laoyuehanni/dsh-git-worktree
 repo-map|@mkaliezz/dsh-repo-map
 TABLE
 
-add_icon_field() {
-  PKG_JSON=$1 node -e '
+# Edit one package manifest and record/replay exactly our own edits.
+#   MODE=apply   PKG=... ICON_FIELD/EXPORT flags computed in-node
+#   MODE=restore PKG=... SLUG=... STATE=...
+edit_manifest() {
+  MODE=$1 PKG_JSON=$2 STATE=$STATE_FILE SLUG=${3:-} node -e '
     const fs = require("node:fs");
     const file = process.env.PKG_JSON;
+    const stateFile = process.env.STATE;
+    const mode = process.env.MODE;
+    const slug = process.env.SLUG;
+    const state = fs.existsSync(stateFile) ? JSON.parse(fs.readFileSync(stateFile, "utf8")) : {};
     const data = JSON.parse(fs.readFileSync(file, "utf8"));
-    if (data.icon === "./icon.svg") {
-      console.log("      package.json already points icon at ./icon.svg");
-      process.exit(0);
-    }
-    if (data.icon !== undefined) {
-      console.log("      kept the package\047s own icon field " + JSON.stringify(data.icon));
-      process.exit(0);
-    }
-    // Keep the familiar key order: icon follows exports (or type) when present.
-    const out = {};
-    let placed = false;
-    const put = () => { if (!placed) { out.icon = "./icon.svg"; placed = true; } };
-    for (const [key, value] of Object.entries(data)) {
-      out[key] = value;
-      if (key === "exports" || (!("exports" in data) && key === "type")) put();
-    }
-    if (!placed) put();
-    fs.writeFileSync(file, JSON.stringify(out, null, 2) + "\n");
-    console.log("      added \"icon\": \"./icon.svg\" to package.json");
-  '
-}
+    const name = data.name;
+    const put = (key, value) => {
+      if (data[key] === value) return;
+      // keep the familiar key order: icon right after exports (or type)
+      const out = {};
+      let placed = key !== "icon";
+      for (const [k, v] of Object.entries(data)) {
+        if (k === key) continue;
+        out[k] = v;
+        if (!placed && (k === "exports" || (!("exports" in data) && k === "type"))) {
+          out[key] = value;
+          placed = true;
+        }
+      }
+      if (!placed) out[key] = value;
+      for (const k of Object.keys(data)) delete data[k];
+      Object.assign(data, out);
+    };
 
-remove_icon_field() {
-  PKG_JSON=$1 node -e '
-    const fs = require("node:fs");
-    const file = process.env.PKG_JSON;
-    const data = JSON.parse(fs.readFileSync(file, "utf8"));
-    if (data.icon !== "./icon.svg") {
-      console.log("      package.json icon field is not ours; left untouched");
+    if (mode === "apply") {
+      const hadIconField = data.icon !== undefined;
+      const exportsObj = data.exports !== undefined && typeof data.exports === "object" && data.exports !== null;
+      const manifestReachable = !exportsObj || data.exports["./package.json"] !== undefined;
+      const hadIconExport = exportsObj && data.exports["./icon"] !== undefined;
+      if (hadIconField) {
+        console.log("      kept the package\047s own icon field " + JSON.stringify(data.icon));
+      } else {
+        put("icon", "./icon.svg");
+        console.log("      added \"icon\": \"./icon.svg\" to package.json");
+      }
+      let addedExport = false;
+      if (!manifestReachable && !hadIconExport) {
+        data.exports["./icon"] = "./icon.svg";
+        addedExport = true;
+        console.log("      added \"./icon\" export so the manifest is readable");
+      }
+      fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
+      if (!hadIconField || addedExport) {
+        state[name] = { slug: process.env.SLUG || name, addedIconField: !hadIconField, addedExport };
+        fs.mkdirSync(require("node:path").dirname(stateFile), { recursive: true });
+        fs.writeFileSync(stateFile, JSON.stringify(state, null, 2) + "\n");
+      }
       process.exit(0);
     }
-    delete data.icon;
+
+    const entry = state[name];
+    if (entry === undefined) {
+      console.log("      no recorded overlay edits; left untouched");
+      process.exit(0);
+    }
+    if (entry.addedIconField && data.icon === "./icon.svg") {
+      delete data.icon;
+      console.log("      removed \"icon\": \"./icon.svg\"");
+    }
+    if (entry.addedExport && data.exports !== undefined && data.exports["./icon"] === "./icon.svg") {
+      delete data.exports["./icon"];
+      console.log("      removed the \"./icon\" export we added");
+    }
     fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
-    console.log("      removed \"icon\": \"./icon.svg\" from package.json");
+    delete state[name];
+    fs.writeFileSync(stateFile, JSON.stringify(state, null, 2) + "\n");
   '
 }
 
 if [ "$RESTORE" -eq 1 ]; then
   printf 'Removing the green-icon overlay from profile %s\n' "$PROFILE"
 else
-  printf "Applying the green-icon overlay to profile %s\n" "$PROFILE"
+  printf 'Applying the green-icon overlay to profile %s\n' "$PROFILE"
   printf 'WARNING: package updates and reinstalls revert this overlay; cosmetic only.\n'
 fi
 
@@ -178,32 +215,49 @@ while IFS='|' read -r slug pkg; do
     skipped=$((skipped + 1))
     continue
   fi
-  if [ ! -f "$icon" ]; then
-    printf '    skipped: curated icon %s is missing\n' "$icon"
-    skipped=$((skipped + 1))
-    continue
-  fi
   if [ ! -f "$pkg_dir/package.json" ]; then
     printf '    skipped: %s/package.json is missing\n' "$pkg_dir"
     skipped=$((skipped + 1))
     continue
   fi
 
+  backup=$STATE_DIR/icons/$slug.svg
+  mkdir -p "$STATE_DIR/icons"
+
   if [ "$RESTORE" -eq 1 ]; then
-    if [ -f "$pkg_dir/icon.svg" ] && cmp -s "$pkg_dir/icon.svg" "$icon"; then
+    edit_manifest restore "$pkg_dir/package.json" "$slug"
+    if [ -f "$backup" ]; then
+      cp "$backup" "$pkg_dir/icon.svg"
+      rm -f "$backup"
+      printf '    restored the original icon.svg\n'
+    elif [ -f "$pkg_dir/icon.svg" ] && cmp -s "$pkg_dir/icon.svg" "$icon"; then
       rm -f "$pkg_dir/icon.svg"
       printf '    removed icon.svg\n'
     else
       printf '    no overlay icon.svg to remove (or it is not ours)\n'
     fi
-    remove_icon_field "$pkg_dir/package.json"
-  else
-    cp "$icon" "$pkg_dir/icon.svg"
-    printf '    copied icon.svg\n'
-    add_icon_field "$pkg_dir/package.json"
+    changed=$((changed + 1))
+    continue
   fi
+
+  if [ ! -f "$icon" ]; then
+    printf '    skipped: curated icon %s is missing\n' "$icon"
+    skipped=$((skipped + 1))
+    continue
+  fi
+  if [ -f "$pkg_dir/icon.svg" ]; then
+    cp "$pkg_dir/icon.svg" "$backup"
+  fi
+  cp "$icon" "$pkg_dir/icon.svg"
+  printf '    copied icon.svg\n'
+  edit_manifest apply "$pkg_dir/package.json" "$slug"
   changed=$((changed + 1))
 done < "$ICON_TABLE"
+
+if [ "$RESTORE" -eq 1 ] && [ -f "$STATE_FILE" ] && [ "$(tr -d '[:space:]{}' < "$STATE_FILE")" = "" ]; then
+  rm -f "$STATE_FILE"
+  rmdir "$STATE_DIR/icons" "$STATE_DIR" 2>/dev/null || true
+fi
 
 if [ "$RESTORE" -eq 1 ]; then
   action=Restored

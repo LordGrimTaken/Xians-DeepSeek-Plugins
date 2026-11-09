@@ -6,7 +6,9 @@
   "description": "Lamprey-style header command menu tabs for the DeepSeek Harness Web UI.",
   "exports": {
     ".": "./index.js",
-    "./client": "./client.js"
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
   },
   "icon": "./icon.svg",
   "files": [
@@ -14,7 +16,8 @@
     "client.js",
     "cordis.patch.yml",
     "icon.svg",
-    "README.md"
+    "README.md",
+    "locale/*.json"
   ],
   "dsh": {
     "bundle": {

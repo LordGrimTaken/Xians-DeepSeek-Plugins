@@ -6,7 +6,9 @@
   "description": "Lamprey-style right workspace deck for the DeepSeek Harness Web UI.",
   "exports": {
     ".": "./index.js",
-    "./client": "./client.js"
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
   },
   "icon": "./icon.svg",
   "files": [
@@ -15,7 +17,8 @@
     "cordis.patch.yml",
     "icon.svg",
     "README.md",
-    "NOTES.md"
+    "NOTES.md",
+    "locale/*.json"
   ],
   "dsh": {
     "bundle": {
