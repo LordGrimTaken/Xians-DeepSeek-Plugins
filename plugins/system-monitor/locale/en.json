@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "System Monitor",
+    "description": "Shows live CPU and memory usage in the sidebar footer. Click the readout for details; it refreshes every few seconds and only reads local OS counters."
+  }
+}

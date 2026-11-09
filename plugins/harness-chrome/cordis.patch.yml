@@ -1,0 +1,3 @@
+- insert:
+    - id: harness-chrome
+      name: '@local/harness-chrome'

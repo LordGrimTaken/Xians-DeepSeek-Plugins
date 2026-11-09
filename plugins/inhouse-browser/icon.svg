@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="In-house Browser">
+  <defs>
+    <linearGradient id="ib-bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b8bff"/>
+      <stop offset="1" stop-color="#1447c4"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#ib-bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round">
+    <circle cx="32" cy="33" r="16.5"/>
+    <ellipse cx="32" cy="33" rx="7.4" ry="16.5"/>
+    <path d="M15.5 33h33"/>
+    <path d="M18.6 24.5h26.8"/>
+    <path d="M18.6 41.5h26.8"/>
+  </g>
+  <circle cx="46.5" cy="18.5" r="4.6" fill="#ffd166" stroke="#1447c4" stroke-width="1.6"/>
+</svg>

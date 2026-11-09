@@ -1,0 +1,26 @@
+{
+  "name": "@local/dsh-plugin-run-hidden",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Run windowed programs on an invisible Windows desktop so automated checks never put a window on the user's screen.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "hidden-run.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session resume",
+    "description": "Resumes agent sessions whose turn was interrupted by a DSH host crash or restart."
+  }
+}

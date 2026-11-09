@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Browser control",
+    "description": "Headless Chromium control for the live DSH Web UI: screenshots, DOM inspection, clicking, typing and JavaScript evaluation on an authenticated local page."
+  }
+}

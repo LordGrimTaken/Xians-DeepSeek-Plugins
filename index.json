@@ -1,0 +1,693 @@
+{
+  "format": 1,
+  "title": "Xian's DeepSeek Plugins",
+  "description": "Fifteen curated DeepSeek Harness plugins: eleven vendored local favourites plus four published npm plugins. Everything installs switched off, so turn on only what you want.",
+  "metadata": {
+    "categories": {
+      "agents": {
+        "title": "Agent teams"
+      },
+      "android": {
+        "title": "Android"
+      },
+      "context": {
+        "title": "Context"
+      },
+      "git": {
+        "title": "Git"
+      },
+      "mobile": {
+        "title": "Mobile"
+      },
+      "reliability": {
+        "title": "Reliability"
+      },
+      "ui": {
+        "title": "Web UI"
+      },
+      "verification": {
+        "title": "Verification"
+      },
+      "workflow": {
+        "title": "Workflow"
+      }
+    },
+    "labels": {
+      "off-by-default": {
+        "title": "Off by default"
+      },
+      "windows-only": {
+        "title": "Windows only"
+      },
+      "requires-android-sdk": {
+        "title": "Requires Android SDK"
+      },
+      "requires-chromium": {
+        "title": "Requires Chromium"
+      }
+    },
+    "sortKeys": {
+      "curated": {
+        "title": "Curated order",
+        "order": "asc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@goodandready/dsh-context-lens",
+      "title": "Context Lens",
+      "description": "Semantic AST code skeletonization and build/test log compression, so oversized files and noisy logs never flood the context window.",
+      "icon": "icons/context-lens.svg",
+      "author": "goodandready",
+      "homepage": "https://github.com/GooDAnDReaDY/dsh-context-lens",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/GooDAnDReaDY/dsh-context-lens.git"
+      },
+      "metadata": {
+        "category": "context",
+        "keywords": [
+          "context",
+          "ast",
+          "skeleton",
+          "log-compression",
+          "tokens"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 1
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.35",
+          "publishTimestamp": 1793880000,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@goodandready/dsh-plugin-notify",
+      "title": "Notify",
+      "description": "Audio chimes, cross-session toasts, desktop push, IM webhooks and web push (PWA) for turn completion, errors and approvals.",
+      "icon": "icons/notify.svg",
+      "author": "goodandready",
+      "homepage": "https://github.com/GooDAnDReaDY/dsh-plugin-notify",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/GooDAnDReaDY/dsh-plugin-notify.git"
+      },
+      "metadata": {
+        "category": "reliability",
+        "keywords": [
+          "notifications",
+          "toast",
+          "webhook",
+          "push",
+          "approvals"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 2
+        }
+      },
+      "versions": [
+        {
+          "version": "0.4.7",
+          "publishTimestamp": 1793707200,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@laoyuehanni/dsh-git-worktree",
+      "title": "Git Worktree",
+      "description": "Branch visibility and isolated git worktrees for Web UI sessions, so parallel agents never share a checkout.",
+      "icon": "icons/git-worktree.svg",
+      "author": "LaoYueHanNi",
+      "homepage": "https://github.com/LaoYueHanNi/dsh-git-worktree",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LaoYueHanNi/dsh-git-worktree.git"
+      },
+      "metadata": {
+        "category": "git",
+        "keywords": [
+          "git",
+          "worktree",
+          "branch",
+          "isolation",
+          "parallel-agents"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 3
+        }
+      },
+      "versions": [
+        {
+          "version": "0.4.13",
+          "publishTimestamp": 1793793600,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@mkaliezz/dsh-repo-map",
+      "title": "Repo Map",
+      "description": "Builds a compact structural map of a repository so an agent can orient itself before reading individual files.",
+      "icon": "icons/repo-map.svg",
+      "author": "MkaliezZ",
+      "homepage": "https://github.com/MkaliezZ/dsh-repo-map",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/MkaliezZ/dsh-repo-map.git"
+      },
+      "metadata": {
+        "category": "context",
+        "keywords": [
+          "repository",
+          "map",
+          "structure",
+          "orientation",
+          "context"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 4
+        }
+      },
+      "versions": [
+        {
+          "version": "0.2.2",
+          "publishTimestamp": 1793188800,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/agent-team-plus",
+      "title": "Agent Team Plus",
+      "description": "Role-based teammates, per-teammate tool and write budgets, and structured handoffs for DSH Agent Teams.",
+      "icon": "icons/agent-team-plus.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/agent-team-plus",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "agents",
+        "keywords": [
+          "agent-team",
+          "teammates",
+          "roles",
+          "handoff",
+          "budgets"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 5
+        }
+      },
+      "versions": [
+        {
+          "version": "0.6.6",
+          "publishTimestamp": 1794225600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/agent-team-plus"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/browser-control",
+      "title": "Browser Control",
+      "description": "Drive the live DSH Web UI headlessly: screenshots, DOM inspection, clicking, typing and JavaScript evaluation on the authenticated local page.",
+      "icon": "icons/browser-control.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/browser-control",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "verification",
+        "keywords": [
+          "browser",
+          "chromium",
+          "playwright",
+          "screenshot",
+          "dom"
+        ],
+        "labels": [
+          "off-by-default",
+          "requires-chromium"
+        ],
+        "sortKeys": {
+          "curated": 6
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793880000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/browser-control"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/game-lab",
+      "title": "Game Lab",
+      "description": "In-app Android emulator page for testing the games you build, with an H.264 live view, Capacitor build-and-play, touch and keyboard input, and idle auto-stop.",
+      "icon": "icons/game-lab.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/game-lab",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "android",
+        "keywords": [
+          "android",
+          "emulator",
+          "games",
+          "capacitor",
+          "adb"
+        ],
+        "labels": [
+          "off-by-default",
+          "requires-android-sdk"
+        ],
+        "sortKeys": {
+          "curated": 7
+        }
+      },
+      "versions": [
+        {
+          "version": "1.4.5",
+          "publishTimestamp": 1794225600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/game-lab"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/harness-chrome",
+      "title": "Harness Chrome",
+      "description": "Lamprey-style header command menu tabs for the DeepSeek Harness Web UI.",
+      "icon": "icons/harness-chrome.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/harness-chrome",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "ui",
+          "header",
+          "tabs",
+          "command-menu",
+          "theme"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 8
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793361600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/harness-chrome"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/harness-deck",
+      "title": "Harness Deck",
+      "description": "Lamprey-style right workspace deck for the DeepSeek Harness Web UI.",
+      "icon": "icons/harness-deck.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/harness-deck",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "ui",
+          "workspace",
+          "deck",
+          "panel",
+          "theme"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 9
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793361600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/harness-deck"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/harness-rail",
+      "title": "Harness Rail",
+      "description": "Lamprey-style left rail pages (Search, Sessions, Customize, Activity) plus the bottom status strip for the DeepSeek Harness Web UI.",
+      "icon": "icons/harness-rail.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/harness-rail",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "ui",
+          "rail",
+          "sidebar",
+          "status",
+          "theme"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 10
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793361600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/harness-rail"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/inhouse-browser",
+      "title": "In-house Browser",
+      "description": "In-house tabbed web browser page inside the Harness Web UI for looking things up without leaving the app.",
+      "icon": "icons/inhouse-browser.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/inhouse-browser",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "browser",
+          "tabs",
+          "webview",
+          "ui"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 11
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793275200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/inhouse-browser"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-mobile-host",
+      "title": "DSH Mobile Host",
+      "description": "Loopback HTTP API that pairs the DSH Mobile Android app with this host: list sessions, upload attachments, prompt agents and follow live events.",
+      "icon": "icons/mobile-host.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/mobile-host",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "mobile",
+        "keywords": [
+          "mobile",
+          "android",
+          "http",
+          "pairing",
+          "sse"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 12
+        }
+      },
+      "versions": [
+        {
+          "version": "0.3.13",
+          "publishTimestamp": 1794139200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/mobile-host"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-plugin-run-hidden",
+      "title": "Run Hidden",
+      "description": "Run windowed programs on an invisible Windows desktop so automated checks never put a window on the user's screen.",
+      "icon": "icons/run-hidden.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/run-hidden",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "workflow",
+        "keywords": [
+          "windows",
+          "hidden",
+          "gui",
+          "automation",
+          "run-hidden"
+        ],
+        "labels": [
+          "off-by-default",
+          "windows-only"
+        ],
+        "sortKeys": {
+          "curated": 13
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793448000,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/run-hidden"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/session-resume",
+      "title": "Session Resume",
+      "description": "Resumes agent sessions whose turn was interrupted when the DSH host crashed or restarted.",
+      "icon": "icons/session-resume.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/session-resume",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "reliability",
+        "keywords": [
+          "resume",
+          "crash",
+          "restart",
+          "sessions",
+          "recovery"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 14
+        }
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1794225600,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/session-resume"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/system-monitor",
+      "title": "System Monitor",
+      "description": "Live CPU and memory usage readout in the DeepSeek Harness sidebar footer.",
+      "icon": "icons/system-monitor.svg",
+      "author": "Xian",
+      "homepage": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins/tree/main/plugins/system-monitor",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": [
+          "cpu",
+          "memory",
+          "monitor",
+          "sidebar",
+          "metrics"
+        ],
+        "labels": [
+          "off-by-default"
+        ],
+        "sortKeys": {
+          "curated": 15
+        }
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793534400,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/LordGrimTaken/Xians-DeepSeek-Plugins.git",
+            "commit": "fbb2c9cecee0f5fd4ffc327fb9536cf23f9a8ab9",
+            "path": "plugins/system-monitor"
+          },
+          "engines": {
+            "dsh": ">=0.2.0"
+          }
+        }
+      ]
+    }
+  ]
+}

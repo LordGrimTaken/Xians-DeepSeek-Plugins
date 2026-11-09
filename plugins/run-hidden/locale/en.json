@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Run Hidden",
+    "description": "Runs a windowed program on an invisible Windows desktop, so checks never open a window on the user's screen."
+  }
+}

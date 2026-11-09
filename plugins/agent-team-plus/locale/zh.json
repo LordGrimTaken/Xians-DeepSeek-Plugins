@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Team Plus",
+    "description": "面向 Agent Teams 的角色化队友：每个队友的工具与写入策略、工具/时间预算、带产物的结构化交接、消息信任策略。新增 spawn_role、team_roles、team_handoff。"
+  }
+}

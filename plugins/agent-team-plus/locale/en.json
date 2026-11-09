@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Agent Team Plus",
+    "description": "Role-based teammates for Agent Teams: per-teammate tool and write policies, tool/time budgets, structured handoffs with artifacts, and a message-trust policy. Adds spawn_role, team_roles, and team_handoff."
+  }
+}
