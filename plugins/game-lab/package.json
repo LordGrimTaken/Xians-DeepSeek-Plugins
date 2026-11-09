@@ -1,0 +1,38 @@
+{
+  "name": "@local/game-lab",
+  "version": "1.4.5",
+  "private": true,
+  "type": "module",
+  "description": "Game Lab: an in-app Android emulator page for testing the games you build, with a smooth H.264 live view, Capacitor build & play, touch/keyboard input and an idle auto-stop.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "client.js",
+    "host/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "NOTES.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "docs/*.md",
+    "assets/*"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

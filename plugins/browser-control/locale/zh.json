@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "浏览器控制",
+    "description": "为 DSH Web 界面提供无头 Chromium 控制：截图、DOM 检查、点击、输入与 JavaScript 执行。"
+  }
+}

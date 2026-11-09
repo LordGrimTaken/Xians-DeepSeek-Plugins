@@ -1,0 +1,22 @@
+# Session Resume bundle: mounts the host-side auto-resume plugin.
+# It watches turn boundaries of every session, persists the open turns it saw,
+# and after a host crash/restart re-drives those interrupted sessions with a
+# continuation prompt.
+- insert:
+    - id: session-resume
+      name: '@local/session-resume'
+      config:
+        enabled: true
+        dryRun: false
+        delaySeconds: 10
+        maxAgeMinutes: 120
+        scanDurableSessions: true
+        scanWindowMinutes: 120
+        maxScanSessions: 20
+        maxResumesPerBoot: 10
+        staggerMs: 1500
+        circuitBreakerWindowMinutes: 15
+        circuitBreakerMaxBoots: 4
+        maxAttemptsPerSession: 2
+        attemptWindowMinutes: 30
+        skipSubagentSessions: true

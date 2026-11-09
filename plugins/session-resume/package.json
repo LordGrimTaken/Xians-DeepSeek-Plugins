@@ -1,0 +1,25 @@
+{
+  "name": "@local/session-resume",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Resumes agent sessions whose turn was interrupted when the DSH host crashed or restarted.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

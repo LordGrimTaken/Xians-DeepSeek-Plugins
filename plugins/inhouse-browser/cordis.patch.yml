@@ -1,0 +1,3 @@
+- insert:
+    - id: inhouse-browser
+      name: '@local/inhouse-browser'

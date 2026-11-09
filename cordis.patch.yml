@@ -1,0 +1,103 @@
+# Xian's DeepSeek Plugins — optional profile rows.
+#
+# Every row below is added DISABLED (`disabled: true`). This repository curates
+# opinionated plugins, so nothing runs until YOU switch on what you want.
+#
+# How to use this file
+#   - Copy the blocks (or individual rows) into your profile's
+#     `cordis.patch.yml`, next to your DSH home:
+#         ${DSH_HOME:-$HOME/.dsh}/profiles/<profile>/cordis.patch.yml
+#   - Or run `scripts/install.sh --profile <profile>`, which installs the
+#     packages, leaves each new bundle UNSELECTED (so it is off), and appends
+#     exactly these rows for you.
+#   - When copying rows by hand: a freshly initialized profile's
+#     cordis.patch.yml holds the empty-list placeholder `[]`. Delete that line
+#     first, or the appended rows form a second YAML document and the file stops
+#     parsing. `scripts/install.sh` removes it for you.
+#
+# How to enable a plugin afterwards
+#   1. Settings -> Plugins: switch the plugin on. This selects its bundle, so
+#      the plugin's own bundle row mounts after a reload. The `xdp-<slug>` rows
+#      here stay disabled duplicates on purpose: they are the canonical row ids
+#      this repository documents, and they never override the bundle.
+#      If you prefer to mount the row directly instead of selecting the bundle,
+#      change that row to `disabled: false`.
+#   2. Reload the Web page so the client half loads.
+#   3. Restart the DSH host for plugins with a host-side half — mobile-host,
+#      session-resume, system-monitor, browser-control, agent-team-plus,
+#      run-hidden and game-lab.
+#
+# Row ids are prefixed `xdp-` so they never collide with the ids the plugin
+# bundles themselves declare, and re-applying this file never duplicates a row.
+
+# Agent teams
+- insert:
+    - id: xdp-agent-team-plus
+      name: '@local/agent-team-plus'
+      disabled: true
+
+# Android
+- insert:
+    - id: xdp-game-lab
+      name: '@local/game-lab'
+      disabled: true
+
+# Context
+- insert:
+    - id: xdp-context-lens
+      name: '@goodandready/dsh-context-lens'
+      disabled: true
+    - id: xdp-repo-map
+      name: '@mkaliezz/dsh-repo-map'
+      disabled: true
+
+# Git
+- insert:
+    - id: xdp-git-worktree
+      name: '@laoyuehanni/dsh-git-worktree'
+      disabled: true
+
+# Mobile
+- insert:
+    - id: xdp-mobile-host
+      name: 'dsh-mobile-host'
+      disabled: true
+
+# Reliability
+- insert:
+    - id: xdp-notify
+      name: '@goodandready/dsh-plugin-notify'
+      disabled: true
+    - id: xdp-session-resume
+      name: '@local/session-resume'
+      disabled: true
+
+# Web UI
+- insert:
+    - id: xdp-harness-chrome
+      name: '@local/harness-chrome'
+      disabled: true
+    - id: xdp-harness-deck
+      name: '@local/harness-deck'
+      disabled: true
+    - id: xdp-harness-rail
+      name: '@local/harness-rail'
+      disabled: true
+    - id: xdp-inhouse-browser
+      name: '@local/inhouse-browser'
+      disabled: true
+    - id: xdp-system-monitor
+      name: '@local/system-monitor'
+      disabled: true
+
+# Verification
+- insert:
+    - id: xdp-browser-control
+      name: '@local/browser-control'
+      disabled: true
+
+# Workflow
+- insert:
+    - id: xdp-run-hidden
+      name: '@local/dsh-plugin-run-hidden'
+      disabled: true

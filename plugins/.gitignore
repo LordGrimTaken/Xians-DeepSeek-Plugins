@@ -1,0 +1,5 @@
+# Vendored packages are committed as shipped content. Node dependencies are
+# installed only in a user's profile, never in this repository.
+node_modules/
+.npm/
+*.tgz

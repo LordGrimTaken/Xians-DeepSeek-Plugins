@@ -1,0 +1,4 @@
+# Browser Control bundle: mounts the headless-browser plugin.
+- insert:
+    - id: browser-control
+      name: '@local/browser-control'

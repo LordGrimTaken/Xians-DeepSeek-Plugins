@@ -1,0 +1,25 @@
+{
+  "name": "@local/browser-control",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Headless Chromium control for the live DSH Web UI: screenshots, DOM inspection, clicking, typing and JavaScript evaluation on an authenticated local page.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

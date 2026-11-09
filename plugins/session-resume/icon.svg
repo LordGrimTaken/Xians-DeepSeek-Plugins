@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Session resume">
+  <rect x="1" y="1" width="46" height="46" rx="11" fill="#12212e"/>
+  <path d="M24 13a11 11 0 1 1-9.6 5.6" fill="none" stroke="#59d0c2" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M13.2 9.6v8.6h8.6" fill="none" stroke="#59d0c2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="2.6" fill="#c6f3ec"/>
+  <path d="M24 18.5v5.9l3.9 2.6" fill="none" stroke="#c6f3ec" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

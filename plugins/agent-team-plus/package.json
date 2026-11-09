@@ -1,0 +1,28 @@
+{
+  "name": "@local/agent-team-plus",
+  "version": "0.6.6",
+  "private": true,
+  "type": "module",
+  "description": "Role-based teammates, per-teammate tool/write budgets, and structured handoffs for DSH Agent Teams.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "icon": "./icon.svg",
+  "files": [
+    "index.js",
+    "src/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "examples/*.md",
+    "test/*.test.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
