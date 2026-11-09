@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Game Lab">
   <defs>
-    <linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#4ee59b"/>
       <stop offset="1" stop-color="#a8ffd9"/>
     </linearGradient>

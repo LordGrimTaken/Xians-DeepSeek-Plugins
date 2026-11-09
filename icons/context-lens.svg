@@ -1,15 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Context Lens">
   <defs>
-    <linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#4ee59b"/>
       <stop offset="1" stop-color="#a8ffd9"/>
     </linearGradient>
   </defs>
   <rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>
   <g fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M23 14 14 23l9 9"/>
-    <path d="M39 14l9 9-9 9"/>
-    <circle cx="34" cy="36" r="9.5"/>
-    <path d="M40.7 42.7 47 49"/>
+    <circle cx="28" cy="28" r="13.5"/>
+    <path d="M38 38l9 9"/>
+  </g>
+  <g fill="none" stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 21.5v3.2M25.2 26.7l-2.4 3.8M30.8 26.7l2.4 3.8"/>
+  </g>
+  <g fill="#a8ffd9">
+    <circle cx="28" cy="20" r="2.2"/>
+    <circle cx="21.6" cy="32" r="2.2"/>
+    <circle cx="34.4" cy="32" r="2.2"/>
   </g>
 </svg>

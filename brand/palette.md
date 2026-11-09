@@ -25,13 +25,16 @@ aurora glows and focus rings.
 ### Gradient
 
 ```svg
-<linearGradient id="xdp-mint" x1="0" y1="0" x2="1" y2="1">
+<linearGradient id="xdp-mint" x1="12" y1="12" x2="52" y2="52" gradientUnits="userSpaceOnUse">
   <stop offset="0" stop-color="#4ee59b"/>
   <stop offset="1" stop-color="#a8ffd9"/>
 </linearGradient>
 ```
 
-Always 45° (top-left → bottom-right). Glyph strokes use `stroke="url(#xdp-mint)"`; the gradient
+Always 45° (top-left → bottom-right) and **user-space**, fixed to the glyph field `(12,12) → (52,52)`
+— never `objectBoundingBox`, because a bounding box collapses on a purely horizontal or vertical
+stroke and the gradient would disappear. Glyph strokes use `stroke="url(#xdp-mint)"`; user-space
+units also keep the same mint ramp across every icon rather than stretching per glyph. The gradient
 is what makes the line look lit from within rather than simply green.
 
 ---
@@ -42,7 +45,7 @@ is what makes the line look lit from within rather than simply green.
 | ---------- | ----------------------------------------------------------------------------------------- |
 | Canvas     | `viewBox="0 0 64 64" width="64" height="64"` — no other size                              |
 | Container  | `<rect x="2" y="2" width="60" height="60" rx="14" fill="#0a1f17" stroke="#4ee59b" stroke-opacity="0.55"/>` |
-| Gradient   | one `xdp-mint` linearGradient per file (45°)                                              |
+| Gradient   | one `xdp-mint` linearGradient per file (45°, `gradientUnits="userSpaceOnUse"`, 12→52)      |
 | Glyph      | `fill="none" stroke="url(#xdp-mint)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"` |
 | Ink bounds | artwork stays roughly inside `x/y 12…52` — a 40 px optical field inside the container     |
 | Detail     | optional secondary strokes: `stroke="#4ee59b" stroke-opacity="0.55" stroke-width="2.6"`   |
